@@ -12,4 +12,8 @@ bill=0
 var prompt = require ("prompt-sync")()
 var bill= prompt( "Bill Amount?")
 var tip_p = prompt ("Tip(%)?") 
+var tip =(bill/tip_p)
+var total= parseInt(bill)+parseInt(tip)
+console.log(tip)
+console.log(total)
 
