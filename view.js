@@ -39,7 +39,7 @@ module.exports = {
 function getTitle(){
     return chalk.red(
         figlet.textSync(
-            'Tip_Calculator_App',
+            'Tip Calculator App',
             {
                 horizontalLayout: 'full',
                 font: 'doom'
