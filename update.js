@@ -1,13 +1,14 @@
-function update(bill,tip_p){
+function update(input){
+    const newTip = (input["bill"]*(input["tip_p"]/100)).toFixed(2)
+    const newTotal = (input["bill"]*((100+input["tip_p"])/100)).toFixed(2)
     return {
-        bill: bill,
-        tip_p: tip_p,
-        tip: (bill*tip_p/100).toFixed(2),
-        total: (bill*(1+tip_p/100)).toFixed(2) 
+        bill: input["bill"],
+        tip_p: input["tip_p"],
+        tip: newTip,
+        total: newTotal
     }
 }
-
-
+    
 module.exports = {
     update
 }
